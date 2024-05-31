@@ -58,7 +58,7 @@
   color:rgb(174, 19, 19)
 }
 #haldi{
-  color: yellowgreen;
+  color: yellow;
 }
 #mehandi{
   color:green;
@@ -71,6 +71,10 @@
 }
 #room{
   color:brown;
+}
+#summary{
+  background-color: aqua;
+  color:orangered;
 }
 footer {
   position: fixed;
