@@ -1,8 +1,12 @@
+
+* {
+  box-sizing: border-box;
+}
+
 .body {
   padding: 0;
   margin: 0;
 }
-
 .logo {
   background-color: black;
 }
@@ -15,10 +19,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-.head {
-  color: rgb(71, 8, 246);
 }
 .head1 {
   color: rgb(15, 251, 23);
@@ -42,7 +42,7 @@
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: yellow !important; /* Change to the desired color */
+  color: yellow !important; 
 }
 
 .src:focus {
@@ -54,8 +54,35 @@
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: black;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   color: white;
+}
+
+@media (min-width: 576px) {
+  .menu {
+    width: 50%; 
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    width: 33.33%; 
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    width: 25%; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    width: 20%; 
+  }
 }
