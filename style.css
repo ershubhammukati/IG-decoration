@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -42,7 +41,7 @@
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: yellow !important; 
+  color: yellow !important;
 }
 
 .src:focus {
@@ -52,7 +51,27 @@
 .active {
   color: white;
 }
-
+.owner{
+  color: purple;
+}
+#bday{
+  color:rgb(174, 19, 19)
+}
+#haldi{
+  color: yellowgreen;
+}
+#mehandi{
+  color:green;
+}
+#car{
+  color:magenta;
+}
+#welcome{
+  color:rgb(71, 10, 239)
+}
+#room{
+  color:brown;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -65,24 +84,91 @@ footer {
 
 @media (min-width: 576px) {
   .menu {
-    width: 50%; 
+    width: 50%;
   }
 }
 
 @media (min-width: 768px) {
   .menu {
-    width: 33.33%; 
+    width: 33.33%;
   }
 }
 
 @media (min-width: 992px) {
   .menu {
-    width: 25%; 
+    width: 25%;
   }
 }
 
 @media (min-width: 1200px) {
   .menu {
-    width: 20%; 
+    width: 20%;
   }
 }
+
+.close-menu {
+  display: none; 
+}
+@media (max-width: 767px) {
+ 
+  .close-menu {
+    display: block; /
+  }
+
+  
+  .menu-open .navbar-nav .nav-item {
+    display: none;
+  }
+
+  
+  .menu-open .navbar-nav .nav-item.show {
+    display: block;
+  }
+}
+
+/* slide button */
+.slide-button {
+  background-color: #4CAF50;
+  border: none; 
+  color: white; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.slide-button:hover {
+  background-color: #45a049; /
+}
+
+
+/* Additional styles for mobile responsiveness */
+@media (max-width: 767px) {
+  .logo {
+    text-align: center; 
+  }
+  .navbar-nav {
+    display: none; 
+    margin-top: 10px; 
+  }
+  
+  .close-menu {
+    display: none; 
+  }
+  .navbar-nav.show {
+    display: block; 
+  }
+  .navbar-nav li {
+    text-align: center; 
+    margin-bottom: 10px; 
+  }
+  .nav-link {
+    display: block; 
+  }
+}
+
+
